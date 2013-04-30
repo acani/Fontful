@@ -22,6 +22,8 @@
 		D25F91F3172D4E8F003051EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25F91D1172D4E8F003051EF /* UIKit.framework */; };
 		D25F91FA172D4E8F003051EF /* NSInvocation+SetTestMethodPrefixToSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D25F91F9172D4E8F003051EF /* NSInvocation+SetTestMethodPrefixToSpec.m */; };
 		D25F91FC172D4E8F003051EF /* ACFAppDelegateSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = D25F91FB172D4E8F003051EF /* ACFAppDelegateSpecs.m */; };
+		D25F9208172D5504003051EF /* ACFFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25F9207172D5504003051EF /* ACFFontViewController.m */; };
+		D29CA2A3172F4E4D00B5052B /* ACFFontViewControllerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = D29CA2A2172F4E4D00B5052B /* ACFFontViewControllerSpecs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		D25F91F8172D4E8F003051EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D25F91F9172D4E8F003051EF /* NSInvocation+SetTestMethodPrefixToSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+SetTestMethodPrefixToSpec.m"; sourceTree = "<group>"; };
 		D25F91FB172D4E8F003051EF /* ACFAppDelegateSpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACFAppDelegateSpecs.m; sourceTree = "<group>"; };
+		D25F9206172D5504003051EF /* ACFFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACFFontViewController.h; sourceTree = "<group>"; };
+		D25F9207172D5504003051EF /* ACFFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFFontViewController.m; sourceTree = "<group>"; };
+		D29CA2A2172F4E4D00B5052B /* ACFFontViewControllerSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACFFontViewControllerSpecs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,7 @@
 			children = (
 				D25F91DA172D4E8F003051EF /* ACFAppDelegate.h */,
 				D25F91DB172D4E8F003051EF /* ACFAppDelegate.m */,
+				D25F9205172D54BF003051EF /* Controllers */,
 				D25F91DD172D4E8F003051EF /* Resources */,
 				D25F91D5172D4E8F003051EF /* Supporting Files */,
 			);
@@ -165,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				D25F91FB172D4E8F003051EF /* ACFAppDelegateSpecs.m */,
+				D29CA2A1172F4E3100B5052B /* Controllers */,
 				D25F91F7172D4E8F003051EF /* Supporting Files */,
 			);
 			path = FontfulSpecs;
@@ -177,6 +184,23 @@
 				D25F91F9172D4E8F003051EF /* NSInvocation+SetTestMethodPrefixToSpec.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D25F9205172D54BF003051EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D25F9206172D5504003051EF /* ACFFontViewController.h */,
+				D25F9207172D5504003051EF /* ACFFontViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D29CA2A1172F4E3100B5052B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D29CA2A2172F4E4D00B5052B /* ACFFontViewControllerSpecs.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +315,7 @@
 			files = (
 				D25F91D9172D4E8F003051EF /* main.m in Sources */,
 				D25F91DC172D4E8F003051EF /* ACFAppDelegate.m in Sources */,
+				D25F9208172D5504003051EF /* ACFFontViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +325,7 @@
 			files = (
 				D25F91FA172D4E8F003051EF /* NSInvocation+SetTestMethodPrefixToSpec.m in Sources */,
 				D25F91FC172D4E8F003051EF /* ACFAppDelegateSpecs.m in Sources */,
+				D29CA2A3172F4E4D00B5052B /* ACFFontViewControllerSpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +468,7 @@
 				D25F9201172D4E8F003051EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D25F9202172D4E8F003051EF /* Build configuration list for PBXNativeTarget "FontfulSpecs" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +477,7 @@
 				D25F9204172D4E8F003051EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
