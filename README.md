@@ -1,3 +1,3 @@
 # Fontful
 
-Fontful is a simple iPhone application.
+Fontful lets you browse the fonts available on iOS.
