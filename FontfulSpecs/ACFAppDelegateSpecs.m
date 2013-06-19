@@ -9,7 +9,7 @@
 - (void)specLaunch
 {
     ACFAppDelegate *appDelegate = (ACFAppDelegate *)[UIApplication sharedApplication].delegate;
-    STAssertNotNil(appDelegate,                                                                       @"Create and set appDelegate.");
+    STAssertNotNil(appDelegate,                                                                       @"Create appDelegate.");
     STAssertTrue([appDelegate isMemberOfClass:[ACFAppDelegate class]],                                @"Make ACFAppDelegate.");
 
     UIWindow *window = appDelegate.window;
@@ -19,13 +19,12 @@
     STAssertFalse (window.hidden,                                                                     @"Make visible.");
 
     UIViewController *rootViewController = window.rootViewController;
-    STAssertNotNil(rootViewController,                                                                @"Create and set rootViewController.");
+    STAssertNotNil(rootViewController,                                                                @"Create rootViewController.");
     STAssertTrue([rootViewController isMemberOfClass:[UINavigationController class]],                 @"Make UINavigationController.");
 
     ACFFontViewController *topViewController = (ACFFontViewController *)((UINavigationController *)rootViewController).topViewController;
-    STAssertNotNil(topViewController,                                                                 @"Create and set topViewController.");
+    STAssertNotNil(topViewController,                                                                 @"Create topViewController.");
     STAssertTrue([topViewController isMemberOfClass:[ACFFontViewController class]],                   @"Make ACFFontViewController.");
-    STAssertEquals(topViewController.tableView.style, UITableViewStyleGrouped,                        @"Set tableView.style to grouped.");
 }
 
 @end

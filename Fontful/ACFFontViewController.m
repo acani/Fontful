@@ -13,9 +13,9 @@
 
 #pragma mark - NSObject
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)init
 {
-    self = [super initWithStyle:style];
+    self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
         // Create a custom `titleLabel`.
         UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320-10, 44)];
@@ -43,7 +43,7 @@
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
     self.navigationController.navigationBar.translucent = YES;
 
-    self.tableView.rowHeight = 52;
+    self.tableView.rowHeight = 48;
 
     _fontNames = [NSMutableArray array];
     for (NSString *fontFamilyName in [UIFont familyNames]) {
